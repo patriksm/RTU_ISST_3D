@@ -12,9 +12,38 @@
     transform-style: preserve-3d;
 }
 
-#square {
+#square01 {
+    position: absolute;
     height: 200px;
     width: 200px;
     background-color: blueviolet;
-    transform: translate3d(500px, 300px, 0px);
+    transform: translate3d(500px, 300px, -100px);
+    opacity: 0.5;
 }
+
+#square02 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    transform: translate3d(500px, 300px, 100px);
+    opacity: 0.5;
+}
+
+#square03 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(131, 226, 43);
+    transform: translate3d(500px, 400px, 0px) rotateX(90deg);
+    opacity: 0.5;
+}
+
+/* #square04 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    transform: translate3d(500px, 300px, 100px);
+    opacity: 0.5;
+} */
