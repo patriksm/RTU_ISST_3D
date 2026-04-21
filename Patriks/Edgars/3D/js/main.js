@@ -1,7 +1,8 @@
 let myW = document.getElementById("world");
 
 let lvl_one = [
-    {name: "floor", posX: 0, posY: 100, posZ: 0, rotX: 90, rotY: 0, rotZ: 0, background: "", width: 2000, height: 2000, opacity: 1, bgImage: "url('assets/floor.jpg')"}
+    {name: "floor", posX: 0, posY: 100, posZ: 0, rotX: 90, rotY: 0, rotZ: 0, background: "", width: 2000, height: 2000, opacity: 1, bgImage: "url('assets/floor.jpg')"},
+    {name: "wall", posX: 0, posY: 0, posZ: 0, rotX: 0, rotZ: 0, rotZ: 0, background: "", width: 200, height: 200, opacity: 1, bgImage: "url('assets/wall.jpg')"},
 ];
 
 let map = [
@@ -16,7 +17,7 @@ let map = [
 function drawMap(myArray) {
     for (let i = 0; i < myArray.length; i++) {
         let square = document.createElement("div");
-        square.id = `${myArray[i].name}0${i + 1}`;
+        square.id = `${myArray[i].name}0${i}`;
         square.style.position = `absolute`;
         square.style.backgroundColor = myArray[i].background ? myArray[i].background : "orange";
         square.style.backgroundImage = myArray[i].bgImage;
